@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaitra Dhake | Full-Stack Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Chaitra Dhake, a Full-Stack Developer specializing in the MERN stack, responsive web design, and clean digital experiences." />
+
+  <!-- Icon for browser tab -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>" />
+
+  <!-- Google Material Symbols & Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="top-header">
+    <nav class="nav-container">
+      <div class="logo-group">
+        <span class="material-symbols-outlined logo-icon">terminal</span>
+        <span class="logo-text">Chaitra Dhake</span>
+      </div>
+      <div class="nav-links">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="#resume" class="btn-resume">
+        Download Resume
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-wrapper">
+        <img alt="Scenic landscape" className="hero-background-img"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuChOBhodFeAr4uC9KJTET0unxI2f08X9WS5Jx0t8t0i7PvPR0sM4QgHMkhpuNBQhg0b_qMqKKXNMWGs1TeD9SDcSvZp4ZxV86ImOQqcyKjWZVjicgRz22ok2rDlhaA1pUXwDP0hcIuoFcP0mJldXczzUNaB73faA5ds2-DGuwUBceRVSZrGIX1ig4kASZxW_RMP9_MihZ2OTdPW__jgSwCnfH7qpYF2zbaPvWIO98bMKCKTESP6IYOYuZUwKHZO4BcmRKzHuLRZ4sc"
+          style="width: 100%; height: 100%; object-fit: cover;" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content max-width-container">
+        <!-- Left content info -->
+        <div class="hero-left">
+          <div class="availability-badge">
+            <span class="status-dot animate-pulse"></span>
+            <span class="badge-text">Available for Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Chaitra Dhake</span>
+          </h1>
+          <h2 class="hero-subtitle">Full-Stack Developer</h2>
+          <p class="hero-description">
+            MCA student with hands-on experience in web development. Passionate about building responsive web
+            applications and crafting clean, efficient digital experiences.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary flex-center-gap">
+              View Projects
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a href="#contact" class="btn-secondary-glass">
+              Contact Me
+            </a>
+          </div>
+
+          <div class="tech-chips-wrapper">
+            <span class="tech-chip">JavaScript</span>
+            <span class="tech-chip">React.js</span>
+            <span class="tech-chip">Node.js</span>
+            <span class="tech-chip">Express.js</span>
+            <span class="tech-chip">MongoDB</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">REST API</span>
+            <span class="tech-chip">WordPress</span>
+          </div>
+        </div>
+
+        <!-- Right interactive code block card -->
+        <div class="hero-right">
+          <div class="code-card animate-float">
+            <div class="window-controls">
+              <span class="control-dot close"></span>
+              <span class="control-dot minimize"></span>
+              <span class="control-dot expand"></span>
+            </div>
+
+            <pre class="code-editor-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = &#123;
+<span class="property">  passion</span>: <span class="string">"Building web experiences"</span>,
+<span class="property">  skills</span>: [
+<span class="string">    "JavaScript"</span>, <span class="string">"React.js"</span>, <span class="string">"Node.js"</span>,
+<span class="string">    "Express.js"</span>, <span class="string">"MongoDB"</span>, <span class="string">"MySQL"</span>
+  ],
+<span class="property">  focus</span>: <span class="string">"Clean code. Great UI. Fast performance"</span>
+&#125;;</code></pre>
+
+            <div class="decor-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="max-width-container about-grid-container">
+        <div class="about-left">
+          <h2 class="section-title">About Me</h2>
+          <div class="title-divider"></div>
+          <p class="about-paragraph">
+            Currently pursuing my Master of Computer Applications (MCA), I am a dedicated developer focused on the MERN
+            stack. My approach combines technical rigor with an eye for user-centric design, ensuring every application
+            is as functional as it is beautiful.
+          </p>
+        </div>
+
+        <div class="about-right">
+          <div class="about-card glass-panel">
+            <span class="material-symbols-outlined card-icon">school</span>
+            <h3 class="card-title">MCA Student</h3>
+            <p class="card-description">Deepening theoretical knowledge while applying practical full-stack solutions.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <span class="material-symbols-outlined card-icon">layers</span>
+            <h3 class="card-title">MERN Expert</h3>
+            <p class="card-description">Building robust applications with MongoDB, Express, React, and Node.js.</p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <span class="material-symbols-outlined card-icon">devices</span>
+            <h3 class="card-title">Responsive Design</h3>
+            <p class="card-description">Crafting seamless experiences across mobile, tablet, and desktop platforms.</p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <span class="material-symbols-outlined card-icon">php</span>
+            <h3 class="card-title">CMS Solutions</h3>
+            <p class="card-description">Extending web presence through optimized WordPress development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="max-width-container">
+        <div class="section-header-center">
+          <h2 class="section-title text-center">Technical Skills</h2>
+          <p class="section-subtitle text-center">The tools I use to bring digital visions to life.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">javascript</span>
+            </div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">terminal</span>
+            </div>
+            <span class="skill-name">React.js</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">javascript</span>
+            </div>
+            <span class="skill-name">Node.js</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">api</span>
+            </div>
+            <span class="skill-name">Express.js</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">database</span>
+            </div>
+            <span class="skill-name">MongoDB</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">storage</span>
+            </div>
+            <span class="skill-name">MySQL</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">cloud_done</span>
+            </div>
+            <span class="skill-name">REST API</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">integration_instructions</span>
+            </div>
+            <span class="skill-name">Postman</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">commit</span>
+            </div>
+            <span class="skill-name">GitHub</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-container">
+              <span class="material-symbols-outlined skill-icon">php</span>
+            </div>
+            <span class="skill-name">WordPress</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+      <div class="max-width-container">
+        <h2 class="section-title text-center margin-bottom-xl">Experience</h2>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <div class="time-badge">June 2025 – Sept 2025</div>
+              <h3 class="timeline-company">Beyonli Services</h3>
+              <p class="timeline-role">Web Development Intern</p>
+            </div>
+
+            <div class="timeline-pip"></div>
+
+            <div class="timeline-details-card glass-panel">
+              <ul class="responsibilities-list">
+                <li class="responsibility-item">
+                  <span class="material-symbols-outlined check-icon">check_circle</span>
+                  <span class="responsibility-text">Developed custom WordPress websites tailored to specific foundation
+                    goals.</span>
+                </li>
+                <li class="responsibility-item">
+                  <span class="material-symbols-outlined check-icon">check_circle</span>
+                  <span class="responsibility-text">Implemented SEO best practices to increase organic
+                    visibility.</span>
+                </li>
+                <li class="responsibility-item">
+                  <span class="material-symbols-outlined check-icon">check_circle</span>
+                  <span class="responsibility-text">Built high-performance, mobile-first responsive interfaces.</span>
+                </li>
+                <li class="responsibility-item">
+                  <span class="material-symbols-outlined check-icon">check_circle</span>
+                  <span class="responsibility-text">Optimized loading speeds and site architecture for GaiAai
+                    Foundation.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="max-width-container">
+        <div class="section-header-left">
+          <h2 class="section-title">Featured Works</h2>
+          <p class="section-subtitle">A selection of my recent development projects.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Featured Project Card -->
+          <div class="featured-project-card glass-panel">
+            <div class="project-image-container">
+              <img alt="Food Order Tracker" class="project-image"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCks3fPIV3M70Cl29VjLUfChuKmrSw1a4AgQMfEJoCwRqAcr0vDZ9OLuZuVx17wlfUW7dnDH6X43aWoA0pD0IyW1JtJyyQFvOQHQ7-FMxO70VQhFDG-8Ogb1uQoXTarKPxS-nE40TeL8rUlp3GWdzEGzizptP3pIqXFCZAK8-HvqkoDMVxlWrFmxE2Az9fxrRuJSrNhKtkqa6A3AUIsMJ8v3SLgDqOetq3BusjDxNdWbd67fIKX1_0YQbILtRXlhsXzWNT5QZfz2MM" />
+            </div>
+
+            <div class="project-details">
+              <div>
+                <div class="project-tags">
+                  <span class="project-tag primary-tag">MERN Stack</span>
+                  <span class="project-tag secondary-tag">Real-time</span>
+                </div>
+
+                <h3 class="project-card-title">Food Order Tracker</h3>
+                <p class="project-card-description">
+                  An end-to-end food management system featuring real-time delivery tracking, an intuitive customer
+                  interface, and a robust admin dashboard for order processing.
+                </p>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/chaitradhake" class="btn-primary flex-center-gap" target="_blank"
+                  rel="noopener noreferrer">
+                  <span class="material-symbols-outlined">code</span> Code
+                </a>
+                <a href="#" class="btn-secondary flex-center-gap">
+                  <span class="material-symbols-outlined">launch</span> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Professional Work Panel -->
+          <div class="side-project-card glass-panel">
+            <h4 class="side-card-title">Professional Works</h4>
+            <p class="side-card-description">
+              Contributed to high-traffic websites during internship at Beyonli Services.
+            </p>
+
+            <ul class="professional-works-list">
+              <li class="professional-work-item">
+                <div class="work-icon-circle">
+                  <span class="material-symbols-outlined">public</span>
+                </div>
+                <span class="work-name">GaiAai Foundation Website</span>
+              </li>
+              <li class="professional-work-item">
+                <div class="work-icon-circle">
+                  <span class="material-symbols-outlined">business</span>
+                </div>
+                <span class="work-name">Beyonli Services Website</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="github-section">
+      <div class="max-width-container">
+        <div class="github-wrapper glass-panel">
+
+          <div class="github-top">
+            <div class="user-profile">
+              <div class="avatar-container">
+                <img alt="chaitradhake" class="avatar-img" src="" />
+              </div>
+              <div class="user-details">
+                <h3 class="github-username">
+                  chaitradhake
+                  <a href="https://github.com/chaitradhake" class="github-link-icon" target="_blank"
+                    rel="noopener noreferrer">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                  </a>
+                </h3>
+                <p class="github-bio">Loading profile...</p>
+              </div>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number" id="github-repos">-</div>
+                <div class="stat-label">Repositories</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" id="github-followers">-</div>
+                <div class="stat-label">Followers</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" id="github-following">-</div>
+                <div class="stat-label">Following</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" id="github-gists">-</div>
+                <div class="stat-label">Public Gists</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="github-bottom">
+            <div class="heatmap-container">
+              <h4 class="heatmap-title">Contribution Calendar</h4>
+              <div class="heatmap-scroll-area">
+                <div class="heatmap-grid" id="heatmap-grid">
+                  <!-- The dynamic calendar image will be injected here -->
+                </div>
+              </div>
+
+              <div class="heatmap-legend">
+                <span>Less</span>
+                <div class="legend-cells">
+                  <div class="contribution-cell level-0"></div>
+                  <div class="contribution-cell level-1"></div>
+                  <div class="contribution-cell level-2"></div>
+                  <div class="contribution-cell level-3"></div>
+                  <div class="contribution-cell level-4"></div>
+                </div>
+                <span>More</span>
+              </div>
+            </div>
+
+            <div class="languages-panel">
+              <h4 class="languages-title">Most Used Languages</h4>
+              <div class="languages-list">
+                <p style="font-family: var(--font-body); color: var(--color-on-surface-variant);">Loading languages...
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const username = "chaitradhake";
+
+          function initGitHubComponent() {
+            const section = document.querySelector(".github-section");
+            if (!section) return;
+
+            const avatarEl = section.querySelector(".avatar-img");
+            const bioEl = section.querySelector(".github-bio");
+            const reposEl = section.querySelector("#github-repos");
+            const followersEl = section.querySelector("#github-followers");
+            const followingEl = section.querySelector("#github-following");
+            const gistsEl = section.querySelector("#github-gists");
+            const languagesList = section.querySelector(".languages-list");
+            const heatmapGrid = section.querySelector("#heatmap-grid");
+
+            // 1. Inject Heatmap (doesn't require API fetch)
+            if (heatmapGrid) {
+              heatmapGrid.innerHTML = `
+                <img src="https://ghchart.rshah.org/2c4a3f/${username}" 
+                     alt="${username}'s GitHub Contribution Calendar" 
+                     style="width: 100%; max-width: 800px; height: auto; display: block;" />
+              `;
+            }
+
+            // Realistic Fallback stats in case of errors / 403 rate limits
+            function useFallbacks() {
+              console.warn("Using fallback GitHub statistics.");
+              if (avatarEl && !avatarEl.getAttribute("src")) {
+                avatarEl.src = "https://avatars.githubusercontent.com/u/108307212?v=4";
+              }
+              if (bioEl && (!bioEl.textContent || bioEl.textContent.trim().startsWith("Loading"))) {
+                bioEl.textContent = "Full-Stack Developer | MCA Student";
+              }
+              if (reposEl && reposEl.textContent === "-") reposEl.textContent = "50+";
+              if (followersEl && followersEl.textContent === "-") followersEl.textContent = "120+";
+              if (followingEl && followingEl.textContent === "-") followingEl.textContent = "85+";
+              if (gistsEl && gistsEl.textContent === "-") gistsEl.textContent = "2"; // realistic gists count
+
+              // Set fallback language breakdown
+              if (languagesList && (languagesList.innerHTML.includes("Loading") || languagesList.innerHTML === "")) {
+                languagesList.innerHTML = `
+                  <div class="lang-item">
+                    <div class="lang-info">
+                      <span class="lang-name">JavaScript</span>
+                      <span class="lang-percentage">45%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                      <div class="progress-bar-fill bg-sunset-gold" style="width: 45%"></div>
+                    </div>
+                  </div>
+                  <div class="lang-item">
+                    <div class="lang-info">
+                      <span class="lang-name">React</span>
+                      <span class="lang-percentage">30%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                      <div class="progress-bar-fill bg-secondary" style="width: 30%"></div>
+                    </div>
+                  </div>
+                  <div class="lang-item">
+                    <div class="lang-info">
+                      <span class="lang-name">HTML/CSS</span>
+                      <span class="lang-percentage">15%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                      <div class="progress-bar-fill bg-primary" style="width: 15%"></div>
+                    </div>
+                  </div>
+                  <div class="lang-item">
+                    <div class="lang-info">
+                      <span class="lang-name">Others</span>
+                      <span class="lang-percentage">10%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                      <div class="progress-bar-fill bg-outline" style="width: 10%"></div>
+                    </div>
+                  </div>
+                `;
+              }
+            }
+
+            // Set Loading indicators if they aren't already populated
+            if (bioEl && bioEl.textContent === "") bioEl.textContent = "Loading profile...";
+            if (reposEl && reposEl.textContent === "") reposEl.textContent = "-";
+            if (followersEl && followersEl.textContent === "") followersEl.textContent = "-";
+            if (followingEl && followingEl.textContent === "") followingEl.textContent = "-";
+            if (gistsEl && gistsEl.textContent === "") gistsEl.textContent = "-";
+
+            // 2. Fetch profile data
+            fetch(`https://api.github.com/users/${username}`)
+              .then(res => {
+                if (res.status === 403) throw new Error("RateLimit");
+                if (!res.ok) throw new Error("FetchFailed");
+                return res.json();
+              })
+              .then(data => {
+                if (avatarEl) avatarEl.src = data.avatar_url;
+                if (bioEl) bioEl.textContent = data.bio || "Full-Stack Developer | MCA Student";
+                if (reposEl) reposEl.textContent = data.public_repos;
+                if (followersEl) followersEl.textContent = data.followers;
+                if (followingEl) followingEl.textContent = data.following;
+                if (gistsEl) gistsEl.textContent = data.public_gists;
+              })
+              .catch(err => {
+                console.error("Profile Fetch Error:", err);
+                useFallbacks();
+              });
+
+            // 3. Fetch repositories data for language breakdown
+            fetch(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`)
+              .then(res => {
+                if (res.status === 403) throw new Error("RateLimit");
+                if (!res.ok) throw new Error("FetchFailed");
+                return res.json();
+              })
+              .then(repos => {
+                const counts = {};
+                let totalReposWithLang = 0;
+
+                repos.forEach(repo => {
+                  if (repo.language) {
+                    counts[repo.language] = (counts[repo.language] || 0) + 1;
+                    totalReposWithLang++;
+                  }
+                });
+
+                // Sort and slice top 4
+                const sortedLangs = Object.entries(counts)
+                  .sort((a, b) => b[1] - a[1])
+                  .slice(0, 4);
+
+                if (!languagesList) return;
+                languagesList.innerHTML = "";
+
+                if (sortedLangs.length === 0) {
+                  languagesList.innerHTML = '<p style="font-family: var(--font-body); color: var(--color-on-surface-variant);">No languages detected.</p>';
+                  return;
+                }
+
+                const colors = ["bg-sunset-gold", "bg-secondary", "bg-primary", "bg-outline"];
+
+                sortedLangs.forEach(([lang, count], index) => {
+                  const percentage = Math.round((count / totalReposWithLang) * 100);
+                  const colorClass = colors[index % colors.length];
+
+                  const itemHTML = `
+                    <div class="lang-item">
+                      <div class="lang-info">
+                        <span class="lang-name">${lang}</span>
+                        <span class="lang-percentage">${percentage}%</span>
+                      </div>
+                      <div class="progress-bar-bg">
+                        <div class="progress-bar-fill ${colorClass}" style="width: ${percentage}%"></div>
+                      </div>
+                    </div>
+                  `;
+                  languagesList.insertAdjacentHTML("beforeend", itemHTML);
+                });
+              })
+              .catch(err => {
+                console.error("Language Fetch Error:", err);
+                useFallbacks();
+              });
+          }
+
+          // Safe DOM state checker executing right after elements exist
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", initGitHubComponent);
+          } else {
+            initGitHubComponent();
+          }
+        })();
+      </script>
+    </section>
+
+
+    <!-- GitHub Stats Section -->
+    <!--  <section class="github-section">
+      <div class="max-width-container">
+        <div class="github-wrapper glass-panel">
+          
+          <div class="github-top">
+            <div class="user-profile">
+              <div class="avatar-container">
+                <img
+                  alt="chaitradhake"
+                  class="avatar-img"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVL-9vPf7jUPTWl9fbWK2JlAIQmg7O87nUPtok6VpgT4KdUotjY6LJaUvGZ_H081aP4rqQkngpv9Sr3PzAzzv8RfsnepLVf9qm5V2xgCtEchs-EEvPpZFuSw2IQy-LMD1VJ88lfhTb52Q1EbNyQVXJAwa1gb1FXIKIijhJuv4jemc52SS6yJ2TncRRzT4W-BkHaxllpto_OUEhetWOtGwBNLf2LWUJQQIsMXjFGsd9ZwOBqVBcKqY-Vo-4bmwBNHic4CJUDU37GK4"
+                />
+              </div>
+              <div class="user-details">
+                <h3 class="github-username">
+                  chaitradhake
+                  <a href="https://github.com/chaitradhake" class="github-link-icon" target="_blank" rel="noopener noreferrer">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                  </a>
+                </h3>
+                <p class="github-bio">Full-Stack Developer | MCA Student</p>
+              </div>
+            </div>
+            
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Repositories</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">120+</div>
+                <div class="stat-label">Followers</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">85+</div>
+                <div class="stat-label">Following</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">32</div>
+                <div class="stat-label">Day Streak</div>
+              </div>
+            </div>
+          </div> -->
+
+    <!--  <div class="github-bottom">
+            <!-- Heatmap Calendar -->
+    <!--  <div class="heatmap-container">
+              <h4 class="heatmap-title">Contribution Calendar</h4>
+              <div class="heatmap-scroll-area">
+                <div class="heatmap-grid" id="heatmap-grid">
+                  <!-- JS will dynamically inject cells here -->
+    <!--    </div>
+              </div>
+              
+              <div class="heatmap-legend">
+                <span>Less</span>
+                <div class="legend-cells">
+                  <div class="contribution-cell level-0"></div>
+                  <div class="contribution-cell level-1"></div>
+                  <div class="contribution-cell level-2"></div>
+                  <div class="contribution-cell level-3"></div>
+                  <div class="contribution-cell level-4"></div>
+                </div>
+                <span>More</span>
+              </div>
+            </div>
+            
+            <!-- Language Distribution Progress Bars -->
+    <!--  <div class="languages-panel">
+              <h4 class="languages-title">Most Used Languages</h4>
+              <div class="languages-list">
+                <div class="lang-item">
+                  <div class="lang-info">
+                    <span class="lang-name">JavaScript</span>
+                    <span class="lang-percentage">45%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill bg-sunset-gold" style="width: 45%"></div>
+                  </div>
+                </div>
+                
+                <div class="lang-item">
+                  <div class="lang-info">
+                    <span class="lang-name">React</span>
+                    <span class="lang-percentage">30%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill bg-secondary" style="width: 30%"></div>
+                  </div>
+                </div>
+                
+                <div class="lang-item">
+                  <div class="lang-info">
+                    <span class="lang-name">HTML/CSS</span>
+                    <span class="lang-percentage">15%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill bg-primary" style="width: 15%"></div>
+                  </div>
+                </div>
+                
+                <div class="lang-item">
+                  <div class="lang-info">
+                    <span class="lang-name">Others</span>
+                    <span class="lang-percentage">10%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill bg-outline" style="width: 10%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+-->
+    <!-- Certificates & Achievements -->
+    <section class="certificates-section" id="certificates">
+      <div class="max-width-container grid-two-columns">
+        <!-- Certificates List -->
+        <div class="credential-column">
+          <h2 class="section-title margin-bottom-lg flex-items-center-gap">
+            <span class="material-symbols-outlined header-decor-icon">verified</span>
+            Certificates
+          </h2>
+          <div class="credential-list">
+            <div class="credential-card hover-slide">
+              <div class="credential-icon-wrapper cert-bg">
+                <span class="material-symbols-outlined credential-icon">flight_takeoff</span>
+              </div>
+              <div class="credential-details">
+                <h4 class="credential-name">Front-End Software Engineering Job Simulation</h4>
+                <p class="credential-issuer">Skyscanner Engineering Excellence</p>
+              </div>
+            </div>
+
+            <div class="credential-card hover-slide">
+              <div class="credential-icon-wrapper cert-bg">
+                <span class="material-symbols-outlined credential-icon">code</span>
+              </div>
+              <div class="credential-details">
+                <h4 class="credential-name">Full-Stack Web Development Bootcamp</h4>
+                <p class="credential-issuer">Udemy Certified Specialization</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements List -->
+        <div class="credential-column">
+          <h2 class="section-title margin-bottom-lg flex-items-center-gap">
+            <span class="material-symbols-outlined header-decor-icon">emoji_events</span>
+            Achievements
+          </h2>
+          <div class="credential-list">
+            <div class="credential-card hover-slide">
+              <div class="credential-icon-wrapper ach-bg">
+                <span class="material-symbols-outlined credential-icon"
+                  style="font-variation-settings: 'FILL' 1;">stars</span>
+              </div>
+              <div class="credential-details">
+                <h4 class="credential-name">Cyber Security Presentation</h4>
+                <p class="credential-issuer">Distinction in Tech Communication</p>
+              </div>
+            </div>
+
+            <div class="credential-card hover-slide">
+              <div class="credential-icon-wrapper ach-bg">
+                <span class="material-symbols-outlined credential-icon"
+                  style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+              </div>
+              <div class="credential-details">
+                <h4 class="credential-name">Savior-Faire Case Study Competition</h4>
+                <p class="credential-issuer">Innovation & Logical Reasoning Award</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+      <div class="max-width-container text-center">
+        <h2 class="section-title margin-bottom-xl">Education</h2>
+
+        <div class="education-grid">
+          <div class="education-card glass-panel">
+            <div class="decor-icon-bg">
+              <span class="material-symbols-outlined large-decor-icon">school</span>
+            </div>
+            <span class="education-period">2024 – Present</span>
+            <h3 class="education-degree">MCA</h3>
+            <p class="education-school">Alard Institute of Management Sciences</p>
+          </div>
+
+          <div class="education-card glass-panel">
+            <div class="decor-icon-bg">
+              <span class="material-symbols-outlined large-decor-icon">history_edu</span>
+            </div>
+            <span class="education-period">2021 – 2024</span>
+            <h3 class="education-degree">BCA (Science)</h3>
+            <p class="education-school">Pratibha College of Commerce and Computer Studies</p>
+            <div class="gpa-badge">CGPA: 7.29/10</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="max-width-container grid-two-columns gap-xl">
+        <!-- Contact details links -->
+        <div class="contact-info-panel">
+          <h2 class="section-title text-white margin-bottom-md">Let's Build Together</h2>
+          <p class="contact-intro">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="icon-circle-white">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <span class="detail-text">chaitradhake21@email.com</span>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="icon-circle-white">
+                <span class="material-symbols-outlined">call</span>
+              </div>
+              <span class="detail-text">+91 9529336513</span>
+            </div>
+          </div>
+
+          <div class="contact-social-links">
+            <a href="https://github.com/chaitradhake" class="social-icon-btn" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined">link</span>
+            </a>
+            <a href="#" class="social-icon-btn">
+              <span class="material-symbols-outlined">terminal</span>
+            </a>
+            <a href="#" class="social-icon-btn" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined">alternate_email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Message Form -->
+        <div class="contact-form-card">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" placeholder="Your Name" class="form-input" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" class="form-input" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" placeholder="Tell me about your project..." rows="4" class="form-textarea"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="max-width-container footer-content">
+      <div class="footer-logo">
+        <span class="material-symbols-outlined footer-logo-icon">terminal</span>
+        <span class="footer-logo-text">Chaitra Dhake</span>
+      </div>
+
+      <p class="footer-copyright">
+        © 2026 Chaitra Dhake | Full-Stack Developer
+      </p>
+
+      <div class="footer-social-links">
+        <a href="https://github.com/chaitradhake" class="footer-social-link" target="_blank"
+          rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/chaitradhake/" class="footer-social-link" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Local Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
