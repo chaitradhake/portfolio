@@ -98,23 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 async function sendToTelegram(name, email, message) {
-  const text = `
-📬 *New Portfolio Message*
-
-👤 *Name:* ${name}
-📧 *Email:* ${email}
-💬 *Message:* ${message}
-  `;
-
-  const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-
-  const response = await fetch(url, {
+  const response = await fetch("/api/contact", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      chat_id: CHAT_ID,
-      text: text,
-      parse_mode: "Markdown",
+      name: name,
+      email: email,
+      message: message,
     }),
   });
 
