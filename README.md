@@ -2,68 +2,108 @@
 
 Personal portfolio website showcasing my projects, skills, and experience as a Full-Stack Developer.
 
-🔗 **Live Site:** [portfolio-chaitradhake.vercel.app](https://portfolio-chaitradhake.vercel.app)
+🔗 **Live Demo:** https://portfolio-chaitradhake.vercel.app
 
 ---
 
 ## 📌 About
 
-This portfolio was built from scratch using vanilla HTML, CSS, and JavaScript — no frameworks, no templates. It highlights my work as a MERN stack developer and includes my projects, technical skills, and contact information.
+This portfolio was built using HTML, CSS, JavaScript, and a lightweight Node.js serverless backend. It showcases my projects, technical skills, experience, and provides a secure contact form integrated with Telegram notifications.
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Structure & semantic markup |
-| CSS3 | Styling, animations, responsive layout |
-| JavaScript | Interactivity & DOM manipulation |
-| Vercel | Deployment & hosting |
+| Technology       | Purpose                                 |
+| ---------------- | --------------------------------------- |
+| HTML5            | Structure & Semantic Markup             |
+| CSS3             | Styling, Animations & Responsive Design |
+| JavaScript       | Interactivity & DOM Manipulation        |
+| Node.js          | Serverless Contact Form API             |
+| Telegram Bot API | Contact Form Notifications              |
+| Vercel           | Deployment & Hosting                    |
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 portfolio/
-├── index.html      # Main HTML file
-├── style.css       # All styles and responsive design
-└── script.js       # JavaScript interactions
+│
+├── api/
+│   └── contact.js        # Serverless API for contact form
+│
+├── index.html            # Main HTML file
+├── style.css             # Styling and responsive design
+├── script.js             # Frontend functionality
+├── package.json          # Project dependencies
+├── .gitignore            # Ignored files
+└── README.md             # Project documentation
 ```
 
 ---
 
 ## ✨ Features
 
-- Fully responsive — works on mobile, tablet, and desktop
-- Clean, minimal design
-- Projects section with GitHub links
-- Skills showcase
-- Contact section
-- Fast load time (no heavy frameworks)
+* Fully Responsive Design
+* Modern UI & Smooth Animations
+* Project Showcase Section
+* Skills & Technologies Section
+* Secure Contact Form
+* Telegram Notification Integration
+* Fast Loading Performance
+* Deployed on Vercel
 
 ---
 
-## 🚀 Run Locally
-
-No setup needed — just open in browser:
+## 🚀 Local Setup
 
 ```bash
 git clone https://github.com/chaitradhake/portfolio.git
 cd portfolio
-# Open index.html in your browser
+
+npm install
+vercel dev
 ```
 
-Or use VS Code Live Server extension for live preview.
+Open:
+
+```text
+http://localhost:3000
+```
 
 ---
 
-## 👩‍💻 Author
+## 🔐 Environment Variables
 
-**Chaitra Dhake** — Full-Stack Developer | MERN Stack
+Create a `.env` file in the project root:
 
-- 🌐 Portfolio: [portfolio-chaitradhake.vercel.app](https://portfolio-chaitradhake.vercel.app)
-- 💼 LinkedIn: [linkedin.com/in/chaitradhake](https://linkedin.com/in/chaitradhake)
-- 🐙 GitHub: [github.com/chaitradhake](https://github.com/chaitradhake)
-- 📧 chaitradhake21@gmail.com
+```env
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHAT_ID=your_chat_id
+```
+
+These variables should also be configured in Vercel Environment Variables for production deployment.
+
+---
+
+## 🌐 Deployment
+
+This project is deployed using Vercel.
+
+Push changes to GitHub and Vercel will automatically redeploy the latest version.
+
+---
+
+##  Author
+
+**Chaitra Dhake**
+
+* Portfolio: https://portfolio-chaitradhake.vercel.app
+* LinkedIn: https://linkedin.com/in/chaitradhake
+* GitHub: https://github.com/chaitradhake
+* Email: [chaitradhake21@gmail.com](mailto:chaitradhake21@gmail.com)
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub.
