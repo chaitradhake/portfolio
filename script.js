@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-const BOT_TOKEN = "8654944809:AAFgS8Or7YeifXA1yDhKKlJ6cJl9Z_7nJkA";
-const CHAT_ID = "1828256621";
+const BOT_TOKEN = "";
+const CHAT_ID = "";
 
 async function sendToTelegram(name, email, message) {
   const text = `
