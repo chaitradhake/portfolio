@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const formCard = document.querySelector('.contact-form-card');
   
   if (contactForm && formCard) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       
       const nameVal = document.getElementById('name').value.trim();
@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Please fill in all required fields.');
         return;
       }
+        await sendToTelegram(nameVal, emailVal, messageVal);
 
       // Display Success Message
       formCard.innerHTML = `
@@ -94,3 +95,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+const BOT_TOKEN = "8654944809:AAFgS8Or7YeifXA1yDhKKlJ6cJl9Z_7nJkA";
+const CHAT_ID = "1828256621";
+
+async function sendToTelegram(name, email, message) {
+  const text = `
+📬 *New Portfolio Message*
+
+👤 *Name:* ${name}
+📧 *Email:* ${email}
+💬 *Message:* ${message}
+  `;
+
+  const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: CHAT_ID,
+      text: text,
+      parse_mode: "Markdown",
+    }),
+  });
+
+  return response.ok;
+}
